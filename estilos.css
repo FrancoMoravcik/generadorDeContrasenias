@@ -1,0 +1,225 @@
+/* 
+- color de botones, check y subidor de caracterese : #a4ffaf
+- color de letras de items #e6e4ed
+- color de letras mas oscuro #7f7d8e
+- color de fondo completo #100f15
+- color de fondo del bloque del generador #24232b
+- color de fondo de medidor de seguridad y subidor #18171f
+-
+-
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    height: 680px;
+    background-color: #100f15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.divTituloYContraseña{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    color: #7f7d8e;
+    padding: 40px;
+}
+
+
+.divContraseñaNueva{
+    background-color: #24232b;
+    width: 450px;
+    height: 60px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; 
+}
+
+.pPassword{
+    color: #7f7d8e65;
+    font-weight: 500;
+    font-size: 22px;   
+}
+
+.btnCopiar{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.imgCopiar {
+    width: 18px;
+}
+
+
+
+/* ///////// */
+
+
+
+form{
+    background-color: #24232b;
+    width: 450px;
+    height: 420px;
+    padding: 20px;
+}
+
+.divLongitud {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.labelNumeroLongitud {
+    color: #a4ffaf;
+    font-size: 22px;
+}
+
+.pLongitud {
+    color:  #e6e4ed;
+}
+
+[type= "range"]{
+    margin: 20px 0px;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    appearance: none;
+    background-color: #100f15af;
+    border-radius: 15px;
+    padding: 1px;
+    height: 8px;
+    transition: all .3s;
+}
+
+[type= "range"]:active{
+    background-color: #a4ffaf;
+}
+
+[type = "range"]::-webkit-slider-thumb{
+    appearance: none;
+    display: block;
+    background-color: #e6e4ed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+[type = "range"]::-webkit-slider-thumb:active {
+    background-color: #100f15;
+    border: 1px solid #a4ffaf;
+    width: 22px;
+    height: 22px;
+}
+
+/* divBtnsCheck */
+
+.divBtnsCheck {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+[type="checkbox"]{
+    appearance: none;
+    background-color: #24232b;
+    border: none;
+    border: 2px solid #e6e4ed;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+[type="checkbox"]:hover{
+    border: 2px solid #a4ffaf;
+}
+
+[type="checkbox"]:checked{
+    background-color: #a4ffaf;
+    border: 2px solid #a4ffaf;
+}
+
+.pCheck {
+    color: #e6e4ed;
+    margin-left: 30px;
+}
+
+/* seccionSeguridad  */
+
+.seccionSeguridad{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #100f15;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.pSeguridad {
+    color: #7f7d8e;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.divPNivelDeSeguridad{
+    margin-left: 100px;
+}
+
+.pNivelSeguridad {
+    color: #e6e4ed;
+    font-size: 22px;
+}
+
+.divDivsNiveles {
+    display: flex;
+}
+
+.divNiveles {
+    border: 2px solid white;
+    width: 10px;
+    height: 27px;
+    margin: 3px;
+}
+
+/* botonGenerar */
+
+.botonGenerar {
+    margin-top: 17px;
+    width: 100%;
+    height: 60px;
+    color: #24232b;
+    border:1px solid #a4ffaf;
+    background-color: #a4ffaf;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all .4s;
+}
+
+.botonGenerar:hover{
+   color: #a4ffaf;
+   border:1px solid #a4ffaf;
+   background-color: #24232b;
+   font-weight: 600;
+}
+
+.botonGenerar:active{
+    background-color: #100f15;
+ }

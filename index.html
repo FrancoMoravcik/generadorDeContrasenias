@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="divTituloYContraseña">
+        <h3>Generador De Contraseñas</h3>
+        <div class="divContraseñaNueva">
+          <p id="password" class="pPassword">P4$5W0rD!</p>
+          <button class="btnCopiar">
+            <img class="imgCopiar" src="img/copiar.png" alt="">
+          </button>
+        </div>
+    </div>
+
+    <form id="formCheckBox">
+      <div >
+        <div class="divLongitud">
+            <p for="longitud" class="pLongitud">Longitud</p>
+            <label  for="longitud" id="labelNumeroLongitud" class="labelNumeroLongitud">0</label>
+        </div>
+         <input id="inputRango" name="longitud" type="range" min="6" max="20" value="0">
+      </div>
+
+
+      <div >
+
+        <div class="divBtnsCheck"> 
+          <input id="checkLEMa" name="checkboxMay" type="checkbox">
+           <label for="checkboxMay" class="pCheck">Incluir Letras en Mayúscula</label>
+        </div>
+
+        <div class="divBtnsCheck"> 
+          <input id="checkLEMi" name="checkboxMin" type="checkbox">
+          <label for="checkboxMin" class="pCheck">Incluir Letras en Minúscula</label>
+       </div>
+
+       <div class="divBtnsCheck"> 
+        <input id="checkN" name="checkboxNum" type="checkbox">
+        <label for="checkboxNum" class="pCheck">Incluir Numeros</label>
+     </div>
+
+     <div class="divBtnsCheck"> 
+      <input id="checkS" name="checkSim" type="checkbox">
+      <label for="checkboxSim" class="pCheck">Incluir Simbolos</label>
+   </div>
+
+  </div>
+
+  <section class="seccionSeguridad">
+    <div>
+      <p class="pSeguridad">SEGURIDAD</p>
+    </div>
+
+    <div class="divPNivelDeSeguridad">
+      <p class="pNivelSeguridad">MEDIUM</p>
+    </div>
+
+    <div class="divDivsNiveles">
+      <div class="divNiveles"></div>
+      <div class="divNiveles"></div>
+      <div class="divNiveles"></div>
+      <div class="divNiveles"></div>
+    </div>
+  </section>
+
+    <button class="botonGenerar">GENERAR</button>
+
+</form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
