@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <title>Document</title>
+    <title>Generador De Contraseñas</title>
 </head>
 <body>
 
     <div class="divTituloYContraseña">
         <h3>Generador De Contraseñas</h3>
         <div class="divContraseñaNueva">
-          <p id="password" class="pPassword">P4$5W0rD!</p>
-          <button class="btnCopiar">
+          <input id="password" class="inputPassword" value="P4$5W0rD!">
+          <button class="btnCopiar" for="password" id="btnCopiar">
             <img class="imgCopiar" src="img/copiar.png" alt="">
           </button>
         </div>
@@ -22,9 +22,9 @@
       <div >
         <div class="divLongitud">
             <p for="longitud" class="pLongitud">Longitud</p>
-            <label  for="longitud" id="labelNumeroLongitud" class="labelNumeroLongitud">0</label>
+            <label  for="longitud" id="labelNumeroLongitud" class="labelNumeroLongitud">8</label>
         </div>
-         <input id="inputRango" name="longitud" type="range" min="6" max="20" value="0">
+         <input id="inputRango" name="longitud" type="range" min="8" max="16" value="8">
       </div>
 
 
@@ -53,12 +53,12 @@
   </div>
 
   <section class="seccionSeguridad">
-    <div>
+    <div class="divPSeguridad">
       <p class="pSeguridad">SEGURIDAD</p>
     </div>
 
     <div class="divPNivelDeSeguridad">
-      <p class="pNivelSeguridad">MEDIUM</p>
+      <p id="nivelSeguridad" class="pNivelSeguridad">--</p>
     </div>
 
     <div class="divDivsNiveles">
@@ -73,6 +73,7 @@
 
 </form>
     
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
 </body>
 </html>
