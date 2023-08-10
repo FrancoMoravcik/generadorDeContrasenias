@@ -74,8 +74,13 @@ h3 {
 .btnCopiar{
     background: none;
     border: none;
-    cursor: pointer;
+color: #a4ffaf;
+cursor: pointer;
 }
+
+.btnCopiar:hover {
+    color: #e6e4ed;
+    }
 
 .imgCopiar {
     width: 18px;
