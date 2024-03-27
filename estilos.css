@@ -31,7 +31,7 @@ h3 {
 
 .divContraseñaNueva{
     background-color: #24232b;
-    width: 350px;
+    width: 450px;
     height: 60px;
     margin-bottom: 15px;
     display: flex;
@@ -83,7 +83,7 @@ cursor: pointer;
 
 form{
     background-color: #24232b;
-    width: 350px;
+    width: 450px;
     height: 420px;
     padding: 20px;
 }
@@ -241,19 +241,15 @@ form{
  }
 
  @media screen and (max-width: 500px){
-    
-body{
-max-width: 350px;
-}
 
 .divContraseñaNueva{
-width: 350px;
+max-width: 350px;
 }
 
 /* ///////// */
 
 form{
-width: 350px;
+max-width: 350px;
 }
 
 
