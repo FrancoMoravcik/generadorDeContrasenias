@@ -40,17 +40,36 @@ h3 {
     padding: 20px; 
 }
 
-.pPassword{
+.inputPassword{
     color: #7f7d8e65;
     font-weight: 500;
     font-size: 22px;   
+    background-color: #24232b;
+    border: none;
 }
+
+.inputPassword:focus{
+    outline: none;
+    background-color: transparent;
+}
+
+.inputPassword::-moz-selection{
+   background-color: transparent;
+}
+.inputPassword::selection{
+    background-color: transparent;
+ }
 
 .btnCopiar{
     background: none;
     border: none;
-    cursor: pointer;
+color: #a4ffaf;
+cursor: pointer;
 }
+
+.btnCopiar:hover {
+    color: #e6e4ed;
+    }
 
 .imgCopiar {
     width: 18px;
@@ -160,6 +179,10 @@ form{
     margin-top: 20px;
 }
 
+.divPSeguridad {
+    width: 40%;
+}
+
 .pSeguridad {
     color: #7f7d8e;
     letter-spacing: 1px;
@@ -168,23 +191,27 @@ form{
 }
 
 .divPNivelDeSeguridad{
-    margin-left: 100px;
+    width: 30%;
 }
 
 .pNivelSeguridad {
     color: #e6e4ed;
     font-size: 22px;
+    text-align: center;
 }
 
 .divDivsNiveles {
+    width: 30%;
     display: flex;
+    justify-content: end;
 }
 
 .divNiveles {
-    border: 2px solid white;
+    border: 1px solid white;
     width: 10px;
     height: 27px;
     margin: 3px;
+    position: sticky;
 }
 
 /* botonGenerar */
