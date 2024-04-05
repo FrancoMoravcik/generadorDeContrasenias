@@ -250,6 +250,7 @@ max-width: 350px;
 
 form{
 max-width: 350px;
+height: 440px;
 }
 
 
@@ -257,7 +258,7 @@ max-width: 350px;
 
 .seccionSeguridad{
     padding: 10px;
-}
+} 
 
 .pSeguridad {
     font-size: 15px;
@@ -274,7 +275,7 @@ max-width: 350px;
 /* botonGenerar */
 
 .botonGenerar {
-    margin-top: 12px;
+    margin-top: 20px;
     height: 40px;
     font-size: 15px;
 }
